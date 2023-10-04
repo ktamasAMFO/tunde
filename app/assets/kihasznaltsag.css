@@ -1,0 +1,13 @@
+#kihasznaltsag-container #info-btn-kihasznaltsag {
+    height: 45px;
+}
+
+#kihasznaltsag-container .row:nth-child(1),
+#kihasznaltsag-container .row:nth-child(2) {
+    align-items: baseline;
+    padding: 5px 16px;
+}
+
+#kihasznaltsag-container .Dropdown {
+    margin: 0
+}

@@ -1,0 +1,145 @@
+.stats-edit-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#run-stats-edit-refresh,
+#ts-stats-edit-refresh,
+#run-stats-edit-refresh-kemia,
+#ts-stats-edit-refresh-kemia {
+    margin-bottom: 20px;
+}
+
+.stats-edit-create-fields,
+.stats-edit-existing-fields {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.stats-fieldset {
+    display: inline-block;
+}
+
+legend.stats-legend {
+    width: auto;
+    padding: 0 5px
+}
+
+fieldset.stats-fieldset {
+    border: solid 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px 15px
+}
+
+.stats-fieldset label {
+    margin: 5px;
+}
+
+.stats-fieldset label {
+    display: block;
+}
+
+.create-stat-api {
+    text-align: center;
+}
+
+.create-stat-charge-checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#run-stats-table, #run-stats-table-kemia {
+    margin-right: 30px;
+}
+
+#ts-stats-table, #ts-stats-table-kemia {
+    margin-right: 30px;
+}
+
+.stats-edit-stat {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+.stats-edit-stat > div:nth-child(2n-1) {
+    justify-self: right;
+}
+
+.stats-edit-stat > div {
+    align-self: center;
+}
+
+.stats-edit-edit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.stats-edit-edit > div {
+    margin: 15px;
+}
+
+#existing-run-stat-id,
+#existing-ts-stat-id {
+    width: 75px;
+}
+
+#existing-ts-stat-multiplier-iqr,
+#create-ts-stat-multiplier-iqr,
+#existing-ts-stat-multiplier-std,
+#create-ts-stat-multiplier-std {
+    width: 75px;
+}
+
+.stats-edit-existing-fields > fieldset:nth-child(3),
+.stats-edit-existing-fields > fieldset:nth-child(8),
+.stats-edit-create-fields > fieldset:nth-child(3),
+.stats-edit-create-fields > fieldset:nth-child(8) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.create-stat-api > label {
+  margin: 0 0 0 0;
+}
+
+#create-run-stat-charge-checkboxes,
+#create-ts-stat-charge-checkboxes,
+#existing-run-stat-charge-checkboxes,
+#existing-ts-stat-charge-checkboxes {
+    font-size: 0.9em;
+}
+
+#ts-stat-edit-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#ts-stat-edit-btns > button {
+    margin-bottom: 5px;
+}
+
+#alert > div,
+#alert_ts > div {
+    margin: 10px 10px 0 10px;
+}
+
+#info-btn-view-stats {
+    height: 45px;
+}
+
+.info_button {
+ height: 45px;
+ padding-left: 20px;
+ margin-top: 15px;
+}
+
+full-width{
+    width: 100%;
+}

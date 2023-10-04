@@ -1,0 +1,57 @@
+.monitoring-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-filler {
+    flex-grow: 1;
+}
+
+.monitoring-graph-small {
+    display: inline-block;
+}
+
+.monitoring-graph-row {
+    display: flex;
+    align-items: center;
+}
+
+.monitoring-graph-info {
+    width: 16%;
+    padding-right: 1%;
+    text-align: right;
+}
+
+.monitoring-graph-info-id {
+    list-style-type: none;
+}
+
+.monitoring-graph-info-table {
+    font-size: smaller;
+}
+
+.monitoring-graph-info-table th {
+    padding: 5px 10px 5px 0;
+    text-align: right;
+}
+
+.monitoring-graph-info-table td {
+    padding: 5px 0 5px 10px;
+}
+
+#monitoring-graph-row-graphs {
+    flex-grow: 1;
+}
+
+#monitoring-graph-row-graphs > div {
+    width: 25%;
+}
+
+.monitoring-notshown-table {
+    margin: 0 16px;
+}
+
+.monitoring_loading {
+    position: relative;
+    top: 220px;
+}

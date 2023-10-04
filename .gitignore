@@ -1,0 +1,9 @@
+.idea
+__pycache__
+logs
+.ipynb_checkpoints
+.vscode
+.mypy_cache
+~$*
+deploy/wheels.tar
+venv

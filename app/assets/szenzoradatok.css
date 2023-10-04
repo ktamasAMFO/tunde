@@ -1,0 +1,45 @@
+#szenzoradatok #sensor-plot-dropdown,
+#szenzoradatok #stat-plot-dropdown {
+    flex-grow: 1;
+}
+
+#szenzoradatok .sensor-dropdown-cnt {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#szenzoradatok #info-btn {
+    height: 45px
+}
+
+#szenzoradatok #yscale-info {
+    height: 20px;
+    padding-bottom: 5px;
+}
+
+#szenzoradatok .row:nth-child(1) {
+    align-items: baseline;
+    padding: 5px 16px;
+}
+
+#szenzoradatok #futtatasok-box > div,
+#szenzoradatok #sarzs-box > div,
+#szenzoradatok #recept-box > div,
+#szenzoradatok #muvelet-box > div {
+    width: 100%;
+}
+
+#szenzoradatok .VirtualizedSelectOption {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stats_div .custom-tab--selected {
+    margin: 0 0 0 0;
+}
+
+.stats_div #tabs-main > a{
+    margin: 8px 8px;
+}

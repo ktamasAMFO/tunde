@@ -1,0 +1,23 @@
+.karbantartas-filter {
+    display: flex;
+    align-items: center;
+}
+
+#api_karbantartas > label {
+    display: block;
+}
+
+.karbantartas-sort {
+    display: flex;
+    align-items: center;
+}
+
+#karbantartas-manual-sort-dropdown {
+    width: 200px;
+}
+
+#karbantartas-filter-worktype,
+#karbantartas-filter-assigned {
+    width: 200px;
+    margin-right: 20px;
+}

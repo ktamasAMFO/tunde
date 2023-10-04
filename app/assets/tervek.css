@@ -1,0 +1,144 @@
+#plan-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1250px;
+    grid-row-gap: 15px;
+    grid-template-areas:
+            "filter plantable"
+            "modify plantable"
+            "plot1 plot1"
+            "plot2opt plot2opt"
+            "plot2 plot2"
+            "plot3 plot3";
+}
+
+#plan-page-grid.megtek {
+    grid-template-columns: 500px 1fr;
+    grid-column-gap: 10px;
+    align-items: start;
+    grid-template-areas:
+            "filter plot1"
+            "plot2opt plot2opt"
+            "plot2 plot2"
+            "plot3 plot3";
+}
+
+#plan-filter-card {
+    grid-area: filter;
+}
+
+#plan-modify-card {
+    grid-area: modify;
+}
+
+#plan-table {
+    grid-area: plantable;
+    width: 1250px;
+}
+
+#plan-charge-runs-container {
+    grid-area: plot1;
+}
+
+#plan-unit-utilization-container {
+    grid-area: plot2;
+}
+
+#plan-operations-container {
+    grid-area: plot3;
+}
+
+#plan-unit-utilization-options {
+    grid-area: plot2opt;
+}
+
+#plan-filter-card-body {
+    display: grid;
+    grid-template-columns: 1fr 326px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+#plan-modify-card-body {
+    display: grid;
+    grid-template-columns: 1fr 326px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+#plan-page-grid .card-body > div {
+    align-self: center;
+}
+
+#plan-page-grid .card-body > div:nth-child(2n-1) {
+    justify-self: right;
+}
+
+#plan-page-grid .card-body .Dropdown, .DateRangePicker {
+    margin: 0;
+}
+
+#plan-page-grid .card-footer {
+    text-align: center;
+}
+
+#plan-datepicker {
+    z-index: 302;
+}
+
+#plan-itemnr-dropdown {
+    z-index: 301;
+}
+
+#plan-util-sort-by > label {
+    display: inline-block;
+}
+
+#plan-unit-utilization,
+#plan-operations {
+    flex-grow: 1;
+}
+
+#plan-util-sort-options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#plan-util-manual-sort-dropdown {
+    width: 200px;
+}
+
+#modify-plan-intercharge-time {
+    display: flex;
+    align-items: baseline;
+}
+
+#modify-plan-intercharge-hour, #modify-plan-intercharge-min {
+    width: 75px;
+    flex-grow: 1;
+}
+
+#plan-table th.dash-header[data-dash-column='StartTimePlan'],
+#plan-table td.dash-cell[data-dash-column='StartTimePlan'],
+#plan-table th.dash-header[data-dash-column='EndTimePlan'],
+#plan-table td.dash-cell[data-dash-column='EndTimePlan'],
+#plan-table th.dash-header[data-dash-column='StartTimeManual'],
+#plan-table td.dash-cell[data-dash-column='StartTimeManual'],
+#plan-table th.dash-header[data-dash-column='EndTimeManual'],
+#plan-table td.dash-cell[data-dash-column='EndTimeManual'] {
+    white-space: normal;
+}
+
+#plan-modify-card-header > div {
+    display: inline-block;
+}
+
+#plan-page-grid #modify-info-btn {
+    height: 25px;
+    margin-left: 10px;
+}
+
+#plan-page-grid #modify-plan-intercharge-time-info {
+    height: 25px;
+    margin-right: 10px;
+}

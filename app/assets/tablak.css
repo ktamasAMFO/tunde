@@ -1,0 +1,217 @@
+#edit-table-content-flex {
+    display: flex;
+}
+
+#edit-table-left-buttons {
+    display: flex;
+    align-items: baseline;
+    margin: 20px 0 20px 15px
+}
+
+#edit-table-left {
+    width: calc(100% - 420px);
+}
+
+#edit-table-dropdown-label {
+    margin-right: 10px;
+    font-size: larger;
+}
+
+#edit-table-dropdown {
+    width: 300px;
+    margin-right: 25px;
+    z-index: 500;
+}
+
+#edit-table-export-btn {
+    margin-right: 15px;
+}
+
+#edit-table-import-btn {
+    margin-right: 15px;
+}
+
+#op_edit-table-status,
+#ur_edit-table-status,
+#r_edit-table-status {
+    flex-grow: 1;
+    margin: 0;
+    transition: color 5s, background-color 5s, border-color 5s;
+}
+
+#op-details-filter-card {
+    width: 400px;
+    margin: 15px 15px;
+}
+
+.edit-table-card-body {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+#details-page-content .card-body > div > div {
+    align-self: center;
+}
+
+#details-page-content .card-body > div > div:nth-child(2n-1) {
+    justify-self: right;
+}
+
+#edit-table-table th {
+    text-align: center;
+}
+
+#r_details-table th.dash-header[data-dash-column='recipe_group'],
+#r_details-table th.dash-header[data-dash-column='recipe_num'],
+#r_details-table th.dash-header[data-dash-column='unit_recipe_num'],
+#r_details-table th.dash-header[data-dash-column='gantt_visible'],
+#r_details-table td.dash-cell[data-dash-column='recipe_group'],
+#r_details-table td.dash-cell[data-dash-column='recipe_num'],
+#r_details-table td.dash-cell[data-dash-column='unit_recipe_num'],
+#r_details-table td.dash-cell[data-dash-column='gantt_visible'] {
+    width: 75px;
+}
+
+#r_details-table th.dash-header[data-dash-column='item_num'],
+#r_details-table td.dash-cell[data-dash-column='item_num'] {
+    width: 100px;
+}
+
+#r_details-table th.dash-header[data-dash-column='recipe_comment'],
+#r_details-table td.dash-cell[data-dash-column='recipe_comment']{
+    white-space: normal;
+    height: auto;
+    width: 250px;
+}
+
+#r_details-table td.dash-cell[data-dash-column='recipe_comment'] {
+    text-align: left;
+}
+
+#r_details-table td.dash-cell {
+    padding: 12px 16px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: #525f7f;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 0;
+    max-width: 150px;
+    /* it seems like border-bottom and top are hard-coded in a DataTable as inline styles :(*/
+    border-bottom: 1px solid #dee2e6 !important;
+    border-top: 1px solid #dee2e6 !important;
+}
+
+#ur_details-table th.dash-header[data-dash-column='recipe_group'],
+#ur_details-table th.dash-header[data-dash-column='recipe_num'],
+#ur_details-table th.dash-header[data-dash-column='unit_recipe_num'],
+#ur_details-table th.dash-header[data-dash-column='gantt_visible'],
+#ur_details-table th.dash-header[data-dash-column='unit_1'],
+#ur_details-table th.dash-header[data-dash-column='unit_2'],
+#ur_details-table th.dash-header[data-dash-column='value'],
+#ur_details-table td.dash-cell[data-dash-column='recipe_group'],
+#ur_details-table td.dash-cell[data-dash-column='recipe_num'],
+#ur_details-table td.dash-cell[data-dash-column='unit_recipe_num'],
+#ur_details-table td.dash-cell[data-dash-column='gantt_visible'],
+#ur_details-table td.dash-cell[data-dash-column='unit_1'],
+#ur_details-table td.dash-cell[data-dash-column='unit_2'],
+#ur_details-table td.dash-cell[data-dash-column='value']{
+    width: 50px;
+}
+
+
+#ur_details-table th.dash-header[data-dash-column='unit_recipe_comment'],
+#ur_details-table td.dash-cell[data-dash-column='unit_recipe_comment']{
+    white-space: normal;
+    height: auto;
+    width: 250px;
+}
+
+#ur_details-table td.dash-cell[data-dash-column='unit_recipe_comment'] {
+    text-align: left;
+}
+
+#ur_details-table td.dash-cell {
+    padding: 12px 16px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: #525f7f;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 0;
+    max-width: 150px;
+    /* it seems like border-bottom and top are hard-coded in a DataTable as inline styles :(*/
+    border-bottom: 1px solid #dee2e6 !important;
+    border-top: 1px solid #dee2e6 !important;
+}
+
+
+#op_details-table th.dash-header[data-dash-column='recipe_group'],
+#op_details-table th.dash-header[data-dash-column='recipe_num'],
+#op_details-table th.dash-header[data-dash-column='unit_recipe_num'],
+#op_details-table th.dash-header[data-dash-column='dash_visible'],
+#op_details-table th.dash-header[data-dash-column='gantt_visible'],
+#op_details-table td.dash-cell[data-dash-column='recipe_group'],
+#op_details-table td.dash-cell[data-dash-column='recipe_num'],
+#op_details-table td.dash-cell[data-dash-column='unit_recipe_num'],
+#op_details-table td.dash-cell[data-dash-column='dash_visible'],
+#op_details-table td.dash-cell[data-dash-column='gantt_visible']{
+    width: 50px;
+}
+
+#op_details-table th.dash-header[data-dash-column='dash_param1'],
+#op_details-table th.dash-header[data-dash-column='dash_param2'],
+#op_details-table th.dash-header[data-dash-column='dash_param3'],
+#op_details-table th.dash-header[data-dash-column='dash_param4'],
+#op_details-table th.dash-header[data-dash-column='stat_param1'],
+#op_details-table th.dash-header[data-dash-column='stat_param2'],
+#op_details-table th.dash-header[data-dash-column='stat_param3'],
+#op_details-table th.dash-header[data-dash-column='stat_param4'],
+#op_details-table td.dash-cell[data-dash-column='dash_param1'],
+#op_details-table td.dash-cell[data-dash-column='dash_param2'],
+#op_details-table td.dash-cell[data-dash-column='dash_param3'],
+#op_details-table td.dash-cell[data-dash-column='dash_param4'],
+#op_details-table td.dash-cell[data-dash-column='stat_param1'],
+#op_details-table td.dash-cell[data-dash-column='stat_param2'],
+#op_details-table td.dash-cell[data-dash-column='stat_param3'],
+#op_details-table td.dash-cell[data-dash-column='stat_param4'],
+#op_details-table td.dash-cell[data-dash-column='stat_param5'],
+#op_details-table td.dash-cell[data-dash-column='stat_param6']{
+    width: 110px;
+}
+
+#op_details-table th.dash-header[data-dash-column='op_type'],
+#op_details-table td.dash-cell[data-dash-column='op_type']{
+    width: 90px;
+}
+
+#op_details-table th.dash-header[data-dash-column='op_comment'],
+#op_details-table td.dash-cell[data-dash-column='op_comment']{
+    white-space: normal;
+    height: auto;
+    width: 250px;
+}
+
+#op_details-table td.dash-cell[data-dash-column='op_comment'] {
+    text-align: left;
+}
+
+#op_details-table td.dash-cell {
+    padding: 12px 16px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: #525f7f;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 0;
+    max-width: 150px;
+    /* it seems like border-bottom and top are hard-coded in a DataTable as inline styles :(*/
+    border-bottom: 1px solid #dee2e6 !important;
+    border-top: 1px solid #dee2e6 !important;
+}
+
+#details-page-content #edit-table-table #op_details-table .dt-table-container__row.dt-table-container__row-1 {
+	overflow-Y: hidden;
+}

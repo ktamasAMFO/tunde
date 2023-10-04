@@ -1,0 +1,8 @@
+#epp_futo-container #info-btn-epp-futo {
+    height: 45px;
+}
+
+#epp_futo-container .row:nth-child(1) {
+    align-items: baseline;
+    padding: 5px 16px;
+}

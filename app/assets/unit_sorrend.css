@@ -1,0 +1,40 @@
+#unitorder-grid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#unitorder-modify-card-body {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+#unitorder-copy-card-body {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+#unitorder-grid .card-body > div {
+    align-self: center;
+}
+
+#unitorder-grid .card-body > div:nth-child(2n-1) {
+    justify-self: right;
+}
+
+#unitorder-dropdown {
+    position: relative;
+    z-index: 999
+}
+
+#unitorder-table {
+    width: 500px
+}
+
+#unitorder-grid .card {
+    margin: 0 30px;
+}
